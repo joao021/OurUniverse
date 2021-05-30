@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.title {
+  color: white;
+  font-size: 4.5em;
+  margin-bottom: 0em;
+  margin-top: 2em;
+  margin-left: 1em;
+}
+
+body {
+
+  background-image: url('../../assets/img/bg1.png');
+  background-repeat: no-repeat;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  background-size: cover;  
+}
+
+nav {
+  margin-left: 49em;
+  margin-top: 2em;
+}
+
+.planetas {
+  width: 7%;
+  transition: 0.3s;
+  float: left;
+  margin: 0 35px;
+}
+
+.planetas li {
+  list-style: none;
+  display: inline-block;
+  
+}
+
+.planetas:hover {
+  transform: translateY(-25px);
+}
+
+.planetasPosicao {
+  margin-left: 43em;
+  margin-top: 6%;
+  width: 81%;
+}
+
+.universe {
+  color: #ffe88a;
+}
+
+.textBox {
+    color: white;
+    width: 32%;
+    font-size: 1.5em;
+    margin-left: 3.2em;
+    margin-top: 2em;
+}
+
+header {
+  background-color: black;
+  opacity: 0.5;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  padding: 15px 50em;
+    
+}
+
+.menuItens {
+  color: white;
+  padding: 2em;
+}
+
+.menuItens:hover {
+  color: #27dac3;
+
+}
+
+.myDiv {
+  position: relative;
+  z-index: 1;
+}
+
