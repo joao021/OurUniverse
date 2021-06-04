@@ -16,16 +16,16 @@ function changeColor3(id)
 }
 
 function replace(id) {
-  document.getElementById(id).style.backgroundImage = 'url("../../assets/img/bg2.png")'
+  document.getElementById(id).style.backgroundImage = 'url("bg2.png")'
 }
 
 function replace2(id) {
-  document.getElementById(id).style.backgroundImage = 'url("../../assets/img/bg1.png")'
+  document.getElementById(id).style.backgroundImage = 'url("bg1.png")'
   
 }
 
 function replace3(id) {
-  document.getElementById(id).style.backgroundImage = 'url("../../assets/img/bg3.png")'
+  document.getElementById(id).style.backgroundImage = 'url("bg3.png")'
   
 }
 
