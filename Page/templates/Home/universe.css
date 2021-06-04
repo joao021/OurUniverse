@@ -7,98 +7,234 @@
   font-family: 'Poppins', sans-serif;
 }
 
-li {
-  list-style: none;
+body, html {
+  height: auto;
 }
 
-a {
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.title {
-  color: white;
-  font-size: 4.5em;
-  margin-bottom: 0em;
-  margin-top: 2em;
-  margin-left: 1em;
-}
-
-body {
-
+.background {
   background-image: url('../../assets/img/bg1.png');
   background-repeat: no-repeat;
-  height: auto;
-  width: auto;
-  max-width: 100%;
-  max-height: 100%;
-  overflow: hidden;
-  background-size: cover;  
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 
-nav {
-  margin-left: 49em;
-  margin-top: 2em;
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 100;
 }
 
-.planetas {
-  width: 7%;
-  transition: 0.3s;
-  float: left;
-  margin: 0 35px;
+.menu-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.planetas li {
+.menu {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.menu li {
   list-style: none;
-  display: inline-block;
-  
 }
 
-.planetas:hover {
-  transform: translateY(-25px);
+.menu .menuItens {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 2em;
+  transition: 0.5s;
 }
 
-.planetasPosicao {
-  margin-left: 43em;
-  margin-top: 6%;
-  width: 81%;
+.menu .menuItens:hover {
+  color: #27dac3;
+}
+
+.textBox {
+  position: relative;
+  max-width: 800px;
+  padding: 80px 100px 30px;
+}
+
+.title {
+  color: white;
+  font-size: 4em;
+  padding: 40px 0px 0;
 }
 
 .universe {
   color: #ffe88a;
 }
 
-.textBox {
-    color: white;
-    width: 32%;
-    font-size: 1.5em;
-    margin-left: 3.2em;
-    margin-top: 2em;
-}
-
-header {
-  background-color: black;
-  opacity: 0.5;
-}
-
-.menu {
-  display: flex;
-  justify-content: center;
-  padding: 15px 50em;
-    
-}
-
-.menuItens {
+p {
   color: white;
-  padding: 2em;
+  width: 100%;
+  font-size: 1em;
+  padding: 40px 0px 10px;
+  line-height: 30px;
 }
 
-.menuItens:hover {
-  color: #27dac3;
-
+.changeBg {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
 }
 
-.myDiv {
-  position: relative;
-  z-index: 1;
+.planetasPosicao {
+  left: 50%;
+  bottom: 30px;
 }
 
+.planetasPosicao li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.planetasPosicao li:hover {
+  transform: translateY(-20px);
+}
+
+.planetasPosicao .planetas {
+  width: 50px;
+}
+
+@media (max-width: 768px) {
+  header {
+    justify-content: center;
+  }
+}
+
+/*media queries*/
+@media (max-width: 715px) {
+
+  header {
+    justify-content: flex-end;
+  }
+
+
+  .menu-section .menu {
+    display: none;
+  }
+
+  /*menu responsivo*/
+  .one,
+  .two,
+  .three {
+    background-color: #fff;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+    transition-duration: 0.3s;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 30px;
+  }
+
+  .one,
+  .two
+  .three {
+    background-color: #fff;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+    transition-duration: 0.3s;
+  }
+
+  /*fullscreen*/
+  .menu-section.on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #2b1055;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-section.on ul {
+    display: block;
+  }
+
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    right: 20px;
+    top: 21px;
+  }
+
+  .menu-section.on .menu-toggle .one {
+    transform: rotate(45deg) translate(7px, 8px);
+  }
+
+  .menu-section.on .menu-toggle .two {
+    opacity: 0;
+  }
+
+  .menu-section.on .menu-toggle .three {
+    transform: rotate(-45deg) translate(7px, -8.8px);
+  } 
+
+  .menu-section.on ul {
+    text-align: center;
+    display: block;
+  }
+
+  .menu-section.on ul {
+    transition-duration: 0.5s;
+    font-size: 1.5em;
+    line-height: 3em;
+    display: block;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 30px;
+  }
+
+  header {
+    padding: 20px 20px;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  p {
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+
+  .textBox {
+    padding: 80px 40px 20px;
+  }
+
+  .planetasPosicao {
+    bottom: 0;
+    justify-content: center;
+  }
+
+  .planetasPosicao .planetas {
+    width: 40px;
+  }
+
+  .changeBg {
+    padding-bottom: 30px;
+  }
+}

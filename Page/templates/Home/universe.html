@@ -6,41 +6,49 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="universe.css">
-  <title>Codando com joyzinha
-  </title>
-
+  <title>Our Universe</title>
 </head>
 
 <body>
-  <nav>
-    <ul class="menu">
-      <li><a href="#" class="menuItens">Home</a></li>
-      <li><a href="#" class="menuItens">Contact</a></li>
-      <li><a href="#" class="menuItens">About</a></li>
-      <li><a href="#" class="menuItens">News</a></li>
-    </ul>
-  </nav>
-  <div>
-    <h1 class="title">
-      Welcome <br> to our <span id="change" class="universe"> UNIVERSE </span>
-    </h1>
-    <p class="textBox">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi nulla perferendis hic nesciunt
-      aperiam id harum facilis culpa architecto consequatur necessitatibus neque corporis repudiandae placeat, iusto
-      praesentium, perspiciatis similique modi.</p>
-  </div>
-  <div>
-    <ul class="planetasPosicao"> 
-      <li><input onclick="replace2(), changeColor2('change')" class="planetas" type="image"
-          src="../../assets/img/planeta.png" /></li>
-      <li><input onclick="replace(), changeColor('change')" class="planetas" type="image"
-          src="../../assets/img/netuno.png" /></li>
-      <li><input onclick="replace3(), changeColor3('change')" class="planetas" type="image"
-          src="../../assets/img/marte.png" /></li>
-    </ul>
+  <div class="background" id="replace">
+    <header>
+      <nav class="menu-section">
+        <ul class="menu">
+          <li><a href="#" class="menuItens">Home</a></li>
+          <li><a href="#" class="menuItens">Contact</a></li>
+          <li><a href="#" class="menuItens">About</a></li>
+          <li><a href="#" class="menuItens">News</a></li>
+        </ul>
+        <div class="menu-toggle" class="active">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="textBox">
+      <h1 class="title">
+        Welcome <br> to our <span id="change" class="universe"> UNIVERSE </span>
+      </h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi nulla perferendis hic nesciunt
+        aperiam id harum facilis culpa architecto consequatur necessitatibus neque corporis repudiandae placeat, iusto
+        praesentium, perspiciatis similique modi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe sunt
+        quos, assumenda distinctio rerum aliquid dicta praesentium.</p>
+    </div>
+
+    <div class="changeBg">
+      <ul class="planetasPosicao">
+        <li><input onclick="replace2('replace'), changeColor2('change')" class="planetas" type="image"
+            src="../../assets/img/planeta.png" /></li>
+        <li><input onclick="replace('replace'), changeColor('change')" class="planetas" type="image"
+            src="../../assets/img/netuno.png" /></li>
+        <li><input onclick="replace3('replace'), changeColor3('change')" class="planetas" type="image"
+            src="../../assets/img/marte.png" /></li>
+      </ul>
+    </div>
   </div>
 
-
-  <!--  -->
 </body>
 <script src="universe.js"></script>
 
