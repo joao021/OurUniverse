@@ -237,4 +237,8 @@ p {
   .changeBg {
     padding-bottom: 30px;
   }
+
+  .menu .menuItens {
+  padding: 0;
+  }
 }
